@@ -1,0 +1,341 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+{% load crispy_forms_tags %}
+<head>
+    <meta charset="utf-8">
+    <title>Home</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicons -->
+    <link href="{% static 'img/favicon.png' %}" rel="icon">
+    <link href="{% static 'img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Open+Sans:300,300i,400,400i,700,700i"
+          rel="stylesheet">
+
+    <!-- Bootstrap CSS File -->
+    <link href="{% static 'lib/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Libraries CSS Files -->
+    <link href="{% static 'lib/animate/animate.min.css' %}" rel="stylesheet">
+    <link href="{% static 'lib/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet">
+    <link href="{% static 'lib/ionicons/css/ionicons.min.css' %}" rel="stylesheet">
+    <link href="{% static 'lib/magnific-popup/magnific-popup.css' %}" rel="stylesheet">
+
+    <!-- Main Stylesheet File -->
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+</head>
+<style>
+    #test-form {
+        margin-right: -3%;
+    }
+    .login-form-1 {
+    padding-top: 10%;
+    padding-bottom: 26%;
+    padding-left: 18%;
+    padding-right: 18%;
+    background: #282727;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+    height: 90%;
+}
+</style>
+<body>
+
+<!--==========================
+Header
+============================-->
+<header id="header">
+    <div class="container">
+
+        <div id="logo" class="pull-left">
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <a href="#intro"><img src="{% static 'img/3uloom%20logo.png' %}" height="45px" width="120px" class="mb-5"
+                                  alt="" title=""></a>
+        </div>
+
+        <nav id="nav-menu-container">
+            <ul class="nav-menu">
+                <li class="menu-active"><a href="#intro">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#advanced-features">Why 3uloom?</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav><!-- #nav-menu-container -->
+    </div>
+</header><!-- #header -->
+
+<!--==========================
+Intro Section
+============================-->
+<section id="intro">
+
+    <div class="intro-text">
+        <h2>Welcome to 3uloom</h2>
+        <p>The app that will change how sessions are booked with tutors </p>
+        <a href="#about" class="btn-get-started scrollto">Get Started</a>
+    </div>
+
+    <div class="product-screens">
+
+        <div class="product-screen-1 wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="0.6s">
+            <a href="{% static 'img/5-SubjectSelection.png' %}"><img src="{% static 'img/5-SubjectSelection.png' %}"
+                                                                     alt=""></a>
+        </div>
+
+        <div class="product-screen-2 wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="0.6s">
+            <a href="{% static 'img/7-TutorsProfile.png' %}"><img src="{% static 'img/7-TutorsProfile.png' %}"
+                                                                  alt=""></a>
+        </div>
+
+        <div class="product-screen-3 wow fadeInUp" data-wow-duration="0.6s">
+            <a href="{% static 'img/6-TutorSelection.png' %}"><img src="{% static 'img/6-TutorSelection.png' %}" alt=""></a>
+        </div>
+
+    </div>
+
+</section><!-- #intro -->
+
+<main id="main">
+
+    <!--==========================
+  About Us Section
+============================-->
+    <section id="about" class="section-bg">
+        <div class="container-fluid">
+            <div class="section-header">
+                <h3 class="section-title">About Us</h3>
+                <span class="section-divider"></span>
+                <p class="section-description">
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque<br>
+                    sunt in culpa qui officia deserunt mollit anim id est laborum
+                </p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6 about-img wow fadeInLeft">
+                    <img src="{% static 'img/blur-business-coffee-commerce-273222.jpg' %}" alt="">
+                </div>
+
+                <div class="col-lg-6 content wow fadeInRight">
+                    <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elite storium paralate</h2>
+                    <h3>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                        id est laborum.</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+
+                    <ul>
+                        <li><i class="ion-android-checkmark-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat.
+                        </li>
+                        <li><i class="ion-android-checkmark-circle"></i> Duis aute irure dolor in reprehenderit in
+                            voluptate velit.
+                        </li>
+                        <li><i class="ion-android-checkmark-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda
+                            mastiro dolore eu fugiat nulla pariatur.
+                        </li>
+                    </ul>
+
+                    <p>
+                        Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                        in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum Libero
+                        justo laoreet sit amet cursus sit amet dictum sit. Commodo sed egestas egestas fringilla
+                        phasellus faucibus scelerisque eleifend donec
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section><!-- #about -->
+
+    <!--==========================
+  student or tutor
+============================-->
+    <section id="advanced-features">
+
+        <div class="features-row section-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <img class="advanced-feature-img-right wow fadeInRight"
+                             src="{% static 'img/selective-focus-photo-of-man-using-laptop-1438081.jpg' %}" alt="">
+                        <div class="wow fadeInLeft">
+                            <h2>Are You A Student?</h2>
+                            <h3>Is it hard to find the right tutor for you? Are the good tutors always fully booked or
+                                overpriced? Do you sometimes forget that you didn't have cash and end up running to an
+                                ATM machine? 3uloom helps you solve these issues and many more!</h3>
+                            <i class="ion-ios-paper-outline" class="wow fadeInRight" data-wow-duration="0.5s"></i>
+                            <p>Browse through a list of multiple tutors in your area for the subject you need to find
+                                the best fit for you.</p>
+                            <i class="ion-star" class="wow fadeInRight" data-wow-delay="0.4"
+                               data-wow-duration="0.5s"></i>
+                            <p>View each tutor's star rating to find the best tutors easily and help fellow students by
+                                rating your experience with tutors.</p>
+                            <i class="ion-card" class="wow fadeInRight" data-wow-delay="0.4"
+                               data-wow-duration="0.5s"></i>
+                            <p>Payment happens after the session and you can choose to pay with cash, card or even
+                                paypal!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="features-row section-bg_1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <img class="advanced-feature-img-left fadeInLeft"
+                             src="{% static 'img/photo-of-man-holding-a-book-927022.jpg' %}" alt="">
+                        <div class="wow fadeInRight">
+                            <h2>Are You A Tutor?</h2>
+                            <i class="ion-ios-calendar" class="wow fadeInRight" data-wow-duration="0.5s"></i>
+                            <p class="wow fadeInRight" data-wow-duration="0.5s">Get sessions booked and easily manage
+                                them through our in app calendar.</p>
+                            <i class="ion-card" class="wow fadeInRight" data-wow-delay="0.2s"
+                               data-wow-duration="0.5s"></i>
+                            <p class="wow fadeInRight" data-wow-delay="0.2s" data-wow-duration="0.5s">Get paid in cash
+                                on a monthly basis even if customers pay by card.</p>
+                            <i class="ion-ios-barcode-outline" class="wow fadeInRight" data-wow-delay="0.4"
+                               data-wow-duration="0.5s"></i>
+                            <p class="wow fadeInRight" data-wow-delay="0.4s" data-wow-duration="0.5s">Benefit from
+                                app-wide, big budget promotions that will get your name out there.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!-- #advanced-features -->
+    <div class="container">
+        <div class="row">
+            <div class="col" id="test-form">
+                <form method="post"  autocomplete="off">
+                    {% csrf_token %}
+                    <div class=" login-form-1 wow fadeInRight" data-wow-duration="0.8s">
+                        <h3>Are You A Student?</h3>
+                        {{ student_form | crispy }}
+                        <div class="form-group">
+                            <input type="submit" class="btnSubmit" value="Submit"/>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        <div class="col">
+            <form method="post" id="reg-form" autocomplete="off">
+                {% csrf_token %}
+
+
+                <div class=" login-form-2 wow fadeInLeft" data-wow-duration="0.8s">
+                    <h3>Or A Tutor?</h3>
+                    {{ tutor_form | crispy }}
+
+                    <div class="form-group">
+                        <input type="submit" class="btnSubmit" value="Submit"/>
+                    </div>
+                    <div class="form-group">
+                    </div>
+
+                </div>
+            </form>
+        </div>
+        </div>
+    </div>
+    <!--==========================
+  student section
+============================-->
+
+    <!=======
+    Contact Section
+    ============================-->
+    <section id="contact">
+        <div class="container">
+            <div class="row wow fadeInUp">
+
+                <div class="col-lg-4 col-md-4">
+                    <div class="contact-about">
+                        <img src="{% static 'img/3uloom%20logo.png' %}" height="45px" width="120px;" alt="">
+                        <br><br>
+                        <p class="pb-5">Cras fermentum odio eu feugiat. Justo eget magna fermentum iaculis eu non diam
+                            phasellus. Scelerisque felis imperdiet proin fermentum leo. Amet volutpat consequat mauris
+                            nunc congue.</p>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-5 col-md-8">
+                    <div class="form">
+                        <div id="sendmessage">Your message has been sent. Thank you!</div>
+                        <div id="errormessage"></div>
+                        <form method="post">
+                            {% csrf_token %}
+                            {{ message_contact_form | crispy }}
+                            <div class="text-center">
+                                <button type="submit" title="Send Message">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section><!-- #contact -->
+
+</main>
+
+<!--==========================
+Footer
+============================-->
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 text-lg-left text-center">
+                <div class="copyright">
+                    &copy; Copyright <strong>3uloom</strong>. All Rights Reserved
+                </div>
+
+            </div>
+            <div class="col-lg-6">
+                <nav class="footer-links text-lg-right text-center pt-2 pt-lg-0">
+                    <a href="#intro" class="scrollto">Home</a>
+                    <a href="#about" class="scrollto">About</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+</footer><!-- #footer -->
+
+<a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+<!-- JavaScript Libraries -->
+<script src="{% static 'lib/jquery/jquery.min.js' %}"></script>
+<script src="{% static 'lib/jquery/jquery-migrate.min.js' %}"></script>
+<script src="{% static 'lib/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'lib/easing/easing.min.js' %}"></script>
+<script src="{% static 'lib/wow/wow.min.js' %}"></script>
+<script src="{% static 'lib/superfish/hoverIntent.js' %}"></script>
+<script src="{% static 'lib/superfish/superfish.min.js' %}"></script>
+<script src="{% static 'lib/magnific-popup/magnific-popup.min.js' %}"></script>
+
+<script>
+</script>
+
+
+<!-- Contact Form JavaScript File -->
+<script src="{% static 'contactform/contactform.js' %}"></script>
+
+<!-- Template Main Javascript File -->
+<script src="{% static 'js/main.js' %}"></script>
+
+</body>
+
+</html>

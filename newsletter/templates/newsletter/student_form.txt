@@ -1,0 +1,8 @@
+Student Name:
+{{ student_name }}
+
+Student Age:
+{{ student_age }}
+
+Email:
+{{ student_email }}
