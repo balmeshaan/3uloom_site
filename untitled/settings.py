@@ -86,14 +86,16 @@ if DEBUG:
         }
     }
 else:
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'django',
-        'USER': 'django',
-        'PASSWORD': '7d78fae9bbe6b89ab1a947ac0fc0cea6',
-        'HOST': 'localhost',
-        'PORT': '',
-
+    DATABASES = {    
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql_psycopg2',
+            'NAME': 'django',
+            'USER': 'django',
+            'PASSWORD': '7d78fae9bbe6b89ab1a947ac0fc0cea6',
+            'HOST': 'localhost',
+            'PORT': '',
+         }
+    }
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
